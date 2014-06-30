@@ -7,20 +7,21 @@ function one(){
 }
 
 function two(){
-	for(var i = 1; i < animals.length; i++){
+	console.log(animals[0]);
+	for(var i = 2; i < animals.length; i += 2){
 		console.log(animals[i]);
 	}
 }
 
 function three(){
-	for(var i = animals.length; i > 0; i--){
+	for(var i = animals.length-1; i > -1; i--){
 		console.log(animals[i]);
 	}
 }
 
 function four(){
 	for(var i = 0; i < animals.length; i++){
-		if (animals[0] || animals[animals.length]) {
+		if (animals[i] === animals[0] || animals[i] === animals[animals.length-1]) {
 			console.log(animals[i]);
 		}else{
 			console.log(animals[i]);
